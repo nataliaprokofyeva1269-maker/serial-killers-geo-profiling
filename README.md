@@ -1,4 +1,6 @@
 Hunting the Pattern: Geographic & Temporal Profiling of Serial Killers
+https://en.wikipedia.org/wiki/List_of_serial_killers_by_number_of_victims
+https://www.kaggle.com/datasets/vesuvius13/serial-killers-dataset
 
 An end-to-end Data Science and Machine Learning project analyzing the operational footprint, historical trends, and predictive behavioral features of extreme offenders globally.
 
