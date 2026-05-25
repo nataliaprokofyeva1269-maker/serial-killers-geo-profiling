@@ -2,11 +2,15 @@ Hunting the Pattern: Geographic & Temporal Profiling of Serial Killers
 https://en.wikipedia.org/wiki/List_of_serial_killers_by_number_of_victims
 https://www.kaggle.com/datasets/vesuvius13/serial-killers-dataset
 
+
+
+# 🔪 Hunting the Pattern: Geographic & Temporal Profiling of Serial Killers
+
 An end-to-end Data Science and Machine Learning project analyzing the operational footprint, historical trends, and predictive behavioral features of extreme offenders globally.
 
 ---
 
-##  Project Overview
+## 📊 Project Overview
 
 This project deconstructs the common mythology surrounding serial crime into clinical, mathematical truths. By integrating exploratory data analysis (EDA), geospatial visualization, and machine learning models, the project isolates the structural and systemic drivers that govern an offender's total impact.
 
@@ -18,34 +22,36 @@ This project deconstructs the common mythology surrounding serial crime into cli
 ---
 
 
----
 
-##  Machine Learning Architecture & Key Insights
 
-Rather than chasing pure predictive accuracy on a highly volatile and compact dataset ($N=633$), the analytical focus was placed on **Feature Importance** and **Partial Effects Analysis** using a Random Forest framework.
 
-###  Model A: Predicting Scale (Total Victim Count)
+## 🧠 Machine Learning Architecture & Key Insights
+
+Rather than chasing pure predictive accuracy on a highly volatile and compact dataset (where N = 633), the analytical focus was placed on **Feature Importance** and **Partial Effects Analysis** using a Random Forest framework.
+
+### 🌎 Model A: Predicting Scale (Total Victim Count)
 * **Core Takeaway:** Geography is the ultimate spatial predictor of scale.
-* **Key Feature Weights:** Operating in the US ($0.265$ importance) or Europe ($0.169$) drastically impacts the expected death toll.
+* **Key Feature Weights:** Operating in the US (0.265 importance) or Europe (0.169) drastically impacts the expected death toll.
 * **The Western Suppressor Effect:** Partial effects modeling mathematically demonstrates that operating within the US or Europe cuts the expected victim count nearly in half compared to non-Western regions, highlighting the impact of systemic law enforcement containment.
 
-###  Model B: Predicting Longevity (Years Active Before Capture)
+### ⏳ Model B: Predicting Longevity (Years Active Before Capture)
 * **Core Takeaway:** Technology and historical era completely override individual "criminal genius."
-* **Key Feature Weights:** The operational decade (`Era`) absolutely dominates the model with a feature importance of **$0.611$**.
-* **The 1990s Boundary:** The inclusion of the `Active after 1990` variable identifies a permanent structural break. The globalization of DNA profiling (CODIS) and digitized cross-jurisdictional databases fundamentally collapsed the evasion window for modern offenders.
+* **Key Feature Weights:** The operational decade (Era) absolutely dominates the model with a feature importance of **0.611**.
+* **The 1990s Boundary:** The inclusion of the "Active after 1990" variable identifies a permanent structural break. The globalization of DNA profiling (CODIS) and digitized cross-jurisdictional databases fundamentally collapsed the evasion window for modern offenders.
 
 ---
 
-## Critical Analytical Discoveries
+## 📌 Critical Analytical Discoveries
 
-1.  **The Power Law Distribution:** Serial homicide is highly skewed. A strict Pareto dynamic applies: the top **$10\%$** most lethal offenders drive approximately **$36\%$** of all recorded fatalities globally.
-2.  **The Per-Capita Illusion (Documentation Bias):** While the US dominates absolute volume ($95$ offenders), it ranks low adjusted for population ($3.2$ per $10\text{M}$). Massive per-capita spikes in small nations (e.g., Estonia at $60.0$) represent a classic documentation bias where minor sample sizes skew relative metrics.
-3.  **The Poison Anomaly & The Judicial Paradox:** * While male methodology is fragmented, over **$80\%$** of female offenders heavily concentrate on poisoning *(among cases with known methods)*.
-    * This high degree of premeditation eliminates the legal defense of impulsivity, explaining why **$>50\%$** of female offenders face execution, outstripping the male execution rate ($\sim 35\%$).
+1. **The Power Law Distribution:** Serial homicide is highly skewed. A strict Pareto dynamic applies: the top **10%** most lethal offenders drive approximately **36%** of all recorded fatalities globally.
+2. **The Per-Capita Illusion (Documentation Bias):** While the US dominates absolute volume (95 offenders), it ranks low adjusted for population (3.2 per 10M). Massive per-capita spikes in small nations (e.g., Estonia at 60.0) represent a classic documentation bias where minor sample sizes skew relative metrics.
+3. **The Poison Anomaly & The Judicial Paradox:**
+   * While male methodology is fragmented, over **80%** of female offenders heavily concentrate on poisoning (among cases with known methods).
+   * This high degree of premeditation eliminates the legal defense of impulsivity, explaining why **more than 50%** of female offenders face execution, outstripping the male execution rate (around 35%).
 
 ---
 
-## Tech Stack & Libraries
+## 🛠️ Tech Stack & Libraries
 
 * **Data Manipulation:** `Python`, `pandas`, `NumPy`
 * **Visualization:** `matplotlib`, `seaborn`, `Folium` (Interactive Choropleth Maps)
@@ -53,9 +59,7 @@ Rather than chasing pure predictive accuracy on a highly volatile and compact da
 
 ---
 
-## Factual Limitations & Caveats
+## 📈 Factual Limitations & Caveats
 
-* **Sample Scale:** $633$ historical records provide an exploratory baseline; results are structural signals rather than definitive deployment forecasting.
-* **Reporting Bias:** Missing categorical data (specifically regarding execution methods, which are documented for only $\sim 20\%$ of the data) represents systemic international archiving variances.
-
-```
+* **Sample Scale:** 633 historical records provide an exploratory baseline; results are structural signals rather than definitive deployment forecasting.
+* **Reporting Bias:** Missing categorical data (specifically regarding execution methods, which are documented for only around 20% of the data) represents systemic international archiving variances.
