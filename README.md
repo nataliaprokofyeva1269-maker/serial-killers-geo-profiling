@@ -17,13 +17,6 @@ This project deconstructs the common mythology surrounding serial crime into cli
 
 ---
 
-##  Repository Structure
-
-The project is modularized into dedicated Jupyter Notebooks mirroring professional data pipelines:
-
-* **`01_EDA_profiling.ipynb`**: Data cleaning, deduplication, demographic profiling, and baseline distribution checks.
-* **`02_geographic_analysis.ipynb`**: Geospatial density calculations ($Per\ Capita$), normalization for demographic size, and interactive mapping.
-* **`03_predictive_model.ipynb`**: Feature engineering and training of Machine Learning models to analyze structural factors.
 
 ---
 
